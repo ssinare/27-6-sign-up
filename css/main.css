@@ -22,8 +22,13 @@ body {
 .left-column {
   width: 40%;
   padding: 40px;
+  height: 500px;
   float: left;
-  background-color: #5c37a8;
+  background-color:#5c37a8;
+  background-image: url(./../img/hill.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
 }
 
 .main-title {
