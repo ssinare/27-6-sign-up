@@ -61,6 +61,29 @@ body {
 }
 
 .form {
+    display: inline-block;
+    width: 100%;
 }
 
-
+.form-row {
+    display: inline-block;
+    width: 100%;
+   }
+  .form-row + .form-row {
+    margin-top: 40px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100%;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  input {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+ }
