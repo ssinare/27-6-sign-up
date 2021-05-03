@@ -9,26 +9,39 @@ body * {
 
 body {
     background-color: #00adcb;
+    background: linear-gradient(151deg, #76b1dd 0%, #2f4f7d 100%);
+    background-position: relateve;
+}
+
+.background {
+    height: 100vh;
+    background-image: url(../img/hill.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
 }
 
 .container {
   display: inline-block;
   width: 800px;
-  margin-top: 100px;
-  margin-left: calc(50% - 400px);
-  background-color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
 }
 
 .left-column {
   width: 40%;
   padding: 40px;
-  height: 500px;
-  float: left;
   background-color:#5c37a8;
   background-image: url(./../img/hill.jpg);
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center;
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
 }
 
 .main-title {
@@ -39,8 +52,11 @@ body {
 
 .bottom-links {
   display: inline-block;
-  width: 100%;
   color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  right: 40px;
 }
 
 .link {
@@ -53,37 +69,43 @@ body {
 .right-column {
   width: 60%;
   padding: 60px;
-  float: left;
+  float: right;
   background-color: #fff;
 }
 
 .close {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  text-align: center;
+  line-height: 54px;
+  background-color: hotpink;
 }
 
-.form {
-    display: inline-block;
-    width: 100%;
+.form-row > span {
+  display: inline-block;
+  padding 11px;
+  margin-left: 11px;
+  line-height: 20px;
+  font-size: 18px;
 }
 
-.form-row {
-    display: inline-block;
-    width: 100%;
-   }
-  .form-row + .form-row {
-    margin-top: 40px;
-  }
-  
-  label {
-    display: inline-block;
-    width: 100%;
-    color: #999;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  input {
-    display: inline-block;
-    width: 100%;
-    font-size: 20px;
- }
+.form-row > a {
+  display: inline-block;
+  padding: 11px;
+  line-height: 20px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.form-row > a:hover {
+  text-decoration: underline;
+}
+
+
+
+
