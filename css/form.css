@@ -28,7 +28,6 @@
     border-bottom: 1px solid #ccc;
  }
  ::placeholder {
-    color: magenta;
     font-style: italic;
  }
  input:focus {
@@ -39,7 +38,7 @@
     padding: 10px 40px;
     font-size: 18px;
     padding-right: 40px;
-    color: lightgreen;
+    color: white;
     text-transform: capitalize;
     background-color: #005dda;
     background: linear-gradient(49deg, #234ad5 0%, #0661dd 100%);
